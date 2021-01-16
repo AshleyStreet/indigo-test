@@ -16,7 +16,7 @@ const CardContainer = () => {
         <>
             <h1 className={styles.heading}>Ashley Street, Indigo</h1>
             <div className={styles.container}>
-                <h3 className={styles.popUpTitle}>Hide Popups?</h3>
+                <h3 className={styles.popUpTitle}>Don't show me warnings when leaving the site.</h3>
                 <input type="checkbox" onClick={e => {setPopup(e.target.checked)}} />
             </div>
             <ImageCard showPopup={showPopup}/>

@@ -28,7 +28,7 @@ const PopupContainer = ({ renderPopup, onClick }) => {
     return (
         <>
             <div ref={popUpRef} role='dialog' aria-modal={renderPopup} className={styles.container}>
-                <span className={styles.closingButton}>&times;</span>
+                <span onClick={onClick} className={styles.closingButton}>&times;</span>
                 <PopupContent onClick={onClick} />
             </div>
         </>
