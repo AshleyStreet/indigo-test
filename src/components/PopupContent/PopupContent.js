@@ -4,7 +4,7 @@ import styles from './PopupContent.module.css';
 
 /*
 *
-*   This Component is just for content.
+*   This Component is just for content takes onClick as a prop from parent.
 *
 */
 const Popup = ({onClick}) => {

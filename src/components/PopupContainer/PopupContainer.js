@@ -4,7 +4,8 @@ import styles from './PopupContainer.module.css';
 
 /*
 *
-*   This Component is just for content.
+*   On render scroll this into view and lock the body, set the focus to this modal.
+*   On unmount unlock the body
 *
 */
 const PopupContainer = ({ renderPopup, onClick }) => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import styles from './ImageCard.module.css';
 
 import PopupContainer from '../PopupContainer/PopupContainer';
@@ -9,7 +9,6 @@ const ImageCard = ({ showPopup }) => {
         data: null
     });
     const [ renderPopup, setRenderPopup] = useState(false);
-    const popUpRef = useRef();
 
     /*
     *
@@ -45,7 +44,7 @@ const ImageCard = ({ showPopup }) => {
     }
 
     return (
-        <>
+    <>
         <div>
         {renderPopup && 
             <PopupContainer renderPopup={renderPopup} onClick={enablePopup} />
@@ -54,8 +53,8 @@ const ImageCard = ({ showPopup }) => {
             <p>Loading...</p>
         }
         {!appState.loading &&
-            appState.data.map((item) => (
-                <div className={styles.imageCard} onClick={!showPopup ? enablePopup : null}>
+            appState.data.map((item, i) => (
+                <div key={i} className={styles.imageCard} onClick={!showPopup ? enablePopup : null}>
                     <div className={styles.imageContainer}>
                         <img className={styles.imageStyle} src={item.download_url} alt="from Picsum" />
                     </div>
@@ -71,7 +70,7 @@ const ImageCard = ({ showPopup }) => {
             ))
         }
         </div>
-        </>
+    </>
     )
 }
 
