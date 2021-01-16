@@ -1,0 +1,26 @@
+.container {
+    position: absolute;
+    padding: 40px;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 0;
+    text-decoration: none;
+    background: #ff655c;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    height: 15%;
+    width: 250px;
+    text-align: center;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.closingButton {
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    left: 5%;
+    top: 0;
+}

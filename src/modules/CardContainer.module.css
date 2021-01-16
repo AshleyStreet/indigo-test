@@ -1,0 +1,17 @@
+.popUpTitle{
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 4%;
+}
+
+.heading {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    font-family: Verdana, sans-serif;
+}
