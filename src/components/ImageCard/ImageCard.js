@@ -4,6 +4,11 @@ import styles from './ImageCard.module.css';
 import PopupContainer from '../PopupContainer/PopupContainer';
 
 const ImageCard = ({ showPopup }) => {
+    /*
+    *
+    *   Show loading state before data
+    * 
+    */
     const [ appState, setAppState ] = useState({
         loading: true,
         data: null
